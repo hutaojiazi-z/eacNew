@@ -1,0 +1,154 @@
+@import "./normalize.css";
+
+:root {
+  --color-major-text: #424242;
+  --color-minor-text: #757575;
+  --color-tint: #ff8198;
+  --color-background: #F5F5F5;
+  --font-size: 14px;
+  --line-height: 1.5;
+  --mainback: rgba(255, 255, 255, 0.5);
+  --bodycolor:#c20c0c;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Han Sans SC","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  /* user-select: none; */
+   /* 禁止用户鼠标在页面上选中文字/图片等 */
+  -webkit-tap-highlight-color: transparent; /* webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色，颜色用数值调节 */
+  background: var(--color-background);
+  color: var(--color-text);
+  width: 100vw;
+  font-size: 14px;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+
+.clear-fix::after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.clear-fix {
+  zoom: 1;
+}
+
+.arrow-right {
+  border-top: 1px solid #999;
+  border-left: 1px solid #999;
+  width: 9px;
+  height: 9px;
+  background-color: transparent;
+  transform: rotate(135deg);
+  display: inline-block;
+  margin-left: .1rem;
+}
+.alignR{
+  text-align: right;
+}
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+.fontsize10{
+  font-size: 10px !important;
+}
+.fontsize12{
+  font-size: 12px !important;
+}
+.fontsize13{
+  font-size: 13px !important;
+}
+.fontsize14{
+  font-size: 14px !important;
+}
+.fontsize16{
+  font-size: 16px !important;
+}
+.fontsize15{
+  font-size: 15px !important;
+}
+.flexBC{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex{
+  display: flex;
+}
+.flex1{
+  flex: 1;
+}
+.alignItemC{
+  align-items: center;
+}
+/* 字体颜色 */
+.white{
+  color: white;
+}
+/* margin */
+.marginr4{
+  margin-right: 4px;
+}
+.marginr10{
+  margin-right: 10px;
+}
+.marginl10{
+  margin-left: 10px;
+}
+.marginb8{
+  margin-bottom: 8px;
+}
+.margint20{
+  margin-top: 20px;
+}
+.margint15{
+  margin-top: 15px;
+}
+
+/* padding */
+.padding8{
+  padding: 8px;
+}
+.padding12{
+  padding: 12px;
+}
+/* color */
+.white{
+  color: white;
+}
+.red{
+  color: #d83838;
+}
+.orange{
+  color: #f96732;
+}
+.conBox{
+  border-radius: 4px;
+  background-color: white;
+  border:2px solid #E1E5EB;
+}
+.comH3{
+  padding: 10px;
+  font-size: 16px;
+  color: #001A56;
+}
