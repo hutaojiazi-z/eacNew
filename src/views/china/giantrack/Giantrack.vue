@@ -80,6 +80,25 @@ export default {
     this.legendLine()
   },
   methods:{
+    handleSizeChange(val) {
+      console.log(`每页 ${val} 条`);
+    },
+    handleCurrentChange(val) {
+      console.log(`当前页: ${val}`);
+    },
+    jumpPage(val){
+        switch(val){
+          case "1"://跳转到首页
+            this.$emit('changeCurrentPage', 1);
+            break;
+          case "0"://跳转到末页
+            this.$emit('changeCurrentPage', this.total/this.pageSize);
+            break;
+        }
+    },
+    clickEnter(){
+      this.$emit('changeCurrentPage', this.currentPage);
+    },
     onSure(){
 
     },
