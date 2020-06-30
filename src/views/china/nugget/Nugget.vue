@@ -34,7 +34,7 @@ import Tabel from"components/table/Tabel"
     data() {
       return {
         currentPage: 1,
-        total: 400,
+        total: 0,
         pageSize: 10,
         LatestBurstHead: {
           tableHead: [//表格头

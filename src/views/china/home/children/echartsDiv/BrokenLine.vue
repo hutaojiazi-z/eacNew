@@ -171,7 +171,7 @@
         console.log(tEacHeight)
         line(this, {
           id: "erveyAress",
-          grid: ['15%', '2%', "25%", '5%'],
+          grid: ['15%', '2%', "25%", '40'],
           xAxis: {
             others:{
               axisLabel: {
